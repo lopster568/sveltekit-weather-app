@@ -1,6 +1,6 @@
 <script>
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
+	import Forecast from '../components/Forecast.svelte';
+	import Info from '../components/Info.svelte';
 	import Overview from '../components/Overview.svelte';
 	export let data;
 </script>
@@ -10,6 +10,8 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<section class="flex flex-col justify-center" >
-	<Overview data={data} />
+<section class="flex flex-col justify-center">
+	<Overview {data} />
+	<Info data={data.current} />
+	<Forecast {data} />
 </section>
