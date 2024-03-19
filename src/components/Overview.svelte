@@ -25,7 +25,7 @@
 				/>
 			</div>
 			<div>
-				<h1 class={`text-4xl font-bold text-gray-800 ${!isDay ? 'text-white' : 'text-gray-800 '}`}>
+				<h1 class={`text-2xl md:text-4xl font-bold text-gray-800 ${!isDay ? 'text-white' : 'text-gray-800 '}`}>
 					{data.current.condition.text}, {data.current.temp_c}°C
 				</h1>
 				<h2>
@@ -42,7 +42,7 @@
 			</div>
 		</div>
 		<div class="flex justify-center flex-col items-center">
-			<h1 class="text-7xl font-bold">{data.location.name}</h1>
+			<h1 class="text-5xl md:text-6xl font-bold">{data.location.name}</h1>
 			<h3 class="text-xl font-light">{data.location.region}, {data.location.country}</h3>
 		</div>
 	</div>
