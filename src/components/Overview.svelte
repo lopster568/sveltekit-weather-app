@@ -16,7 +16,7 @@
 				<img
 					src={data.current.condition.icon}
 					class="w-24 p-4 bg-white/40 rounded-3xl"
-					alt="Svelte Logo"
+					alt="Logo"
 				/>
 			</div>
 			<div>
