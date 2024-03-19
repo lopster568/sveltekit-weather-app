@@ -7,12 +7,12 @@
 <div>
 	<div class="">
 		<div
-			class={`flex p-4 px-8 items-center text-left backdrop-blur-xl hover:backdrop-blur-lg rounded-xl transition-all ease-in-out  hover:bg-[#A7C053]/60 bg-[#A7C053]/40 ${!isDay ? 'text-white hover:bg-[#3B5370]/60 bg-[#3B5370]/40' : 'text-gray-800 hover:bg-[#A7C053]/60 bg-[#A7C053]/40'}`}
+			class={`flex p-4 px-8 items-center text-left backdrop-blur-xl hover:backdrop-blur-lg rounded-xl transition-all ease-in-out ${!isDay ? 'text-white hover:bg-[#3B5370]/60 bg-[#3B5370]/40' : 'text-gray-800 hover:bg-[#A7C053]/60 bg-[#A7C053]/40'}`}
 		>
 			<h1 class="text-3xl font-bold">Day Forecast</h1>
 		</div>
 		<div
-			class={`grid grid-cols-2 md:grid-cols-4 grid-rows-2 gap-8 p-4 px-8 my-4 items-center text-left backdrop-blur-xl hover:bg-[#A7C053]/60 bg-[#A7C053]/40 hover:backdrop-blur-lg rounded-xl ${!isDay ? 'text-white hover:bg-[#3B5370]/60 bg-[#3B5370]/40' : 'text-gray-800 hover:bg-[#A7C053]/60 bg-[#A7C053]/40'}`}
+			class={`grid grid-cols-2 md:grid-cols-4 grid-rows-2 gap-8 p-4 px-8 my-4 items-center text-left backdrop-blur-xl  hover:backdrop-blur-lg rounded-xl ${!isDay ? 'text-white hover:bg-[#3B5370]/60 bg-[#3B5370]/40' : 'text-gray-800 hover:bg-[#A7C053]/60 bg-[#A7C053]/40'}`}
 		>
 			<div
 				class="bg-white/40 rounded-3xl flex flex-col md:flex-row text-2xl font-light items-center justify-center px-8"
@@ -69,25 +69,33 @@
 					class="flex py-16 justify-center items-center flex-col text-left backdrop-blur-xl hover:bg-white/20 bg-white/40 hover:backdrop-blur-lg transition-all ease-in-out hover:scale-105 rounded-xl"
 				>
 					<span class="font-bold text-lg">Sunrise</span>
-					<span class=" font-light text-3xl md:text-4xl">{data.forecast.forecastday[0].astro.sunrise}</span>
+					<span class=" font-light text-3xl md:text-4xl"
+						>{data.forecast.forecastday[0].astro.sunrise}</span
+					>
 				</div>
 				<div
 					class="flex py-16 justify-center items-center flex-col text-left backdrop-blur-xl hover:bg-white/20 bg-white/40 hover:backdrop-blur-lg transition-all ease-in-out hover:scale-105 rounded-xl"
 				>
 					<span class="font-bold text-lg">Sunset</span>
-					<span class=" font-light text-3xl md:text-4xl">{data.forecast.forecastday[0].astro.sunset}</span>
+					<span class=" font-light text-3xl md:text-4xl"
+						>{data.forecast.forecastday[0].astro.sunset}</span
+					>
 				</div>
 				<div
 					class="flex py-16 justify-center items-center flex-col text-left backdrop-blur-xl hover:bg-white/20 bg-white/40 hover:backdrop-blur-lg transition-all ease-in-out hover:scale-105 rounded-xl"
 				>
 					<span class="font-bold text-lg">Moonrise</span>
-					<span class=" font-light text-3xl md:text-4xl">{data.forecast.forecastday[0].astro.moonrise}</span>
+					<span class=" font-light text-3xl md:text-4xl"
+						>{data.forecast.forecastday[0].astro.moonrise}</span
+					>
 				</div>
 				<div
 					class="flex py-16 justify-center items-center flex-col text-left backdrop-blur-xl hover:bg-white/20 bg-white/40 hover:backdrop-blur-lg transition-all ease-in-out hover:scale-105 rounded-xl"
 				>
 					<span class="font-bold text-lg">Moonset</span>
-					<span class=" font-light text-3xl md:text-4xl">{data.forecast.forecastday[0].astro.moonset}</span>
+					<span class=" font-light text-3xl md:text-4xl"
+						>{data.forecast.forecastday[0].astro.moonset}</span
+					>
 				</div>
 			</div>
 		</div>
